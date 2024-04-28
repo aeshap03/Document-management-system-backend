@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "533c4d92-d7de-40af-96ac-f387681f9c8c",
+		"name": "RXROOSTER_WEB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "22936548"
+	},
+	"item": [
+		{
+			"name": "USER",
+			"item": [
+				{
+					"name": "User_Login",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mobile_number\":\"7458265415\",\r\n    \"country_code\":\"+91\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://192.168.29.40:3000/userLogin/login"
+					},
+					"response": []
+				},
+				{
+					"name": "User_Profile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_id",
+									"value": "633a7276cf6eb7ad97af4e49",
+									"type": "text"
+								},
+								{
+									"key": "user_name",
+									"value": "isha",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://192.168.29.40:3000/userLogin/userProfile"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DOCUMENT",
+			"item": [
+				{
+					"name": "AddDcument",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "633a7276cf6eb7ad97af4e49",
+									"type": "text"
+								},
+								{
+									"key": "document_type",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "document_description",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "expire_date",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "reminder_date",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "reminder_time",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "reminder_repeat",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://192.168.29.40:3000/userDocument/documentAdd"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,1371 @@
+{
+	"info": {
+		"_postman_id": "85593417-0d4f-482a-b56b-e00de548df4d",
+		"name": "RXROOSTER",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "22936548"
+	},
+	"item": [
+		{
+			"name": "USER",
+			"item": [
+				{
+					"name": "LoginUser",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzM2FiY2FhMGVjNjZkYWYwNzZiZDczZiIsImlhdCI6MTY2NDc5Mzc3MH0.cEj3eljN6EQ1H6PFbIaASAZh4mq6xV1qg97zMGrp3Ec"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "mobile_number",
+									"value": "7778749562",
+									"type": "text"
+								},
+								{
+									"key": "is_verify",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "country_code",
+									"value": "+91",
+									"type": "text"
+								},
+								{
+									"key": "device_token",
+									"value": "agfgbvjgkjhkafhhhhhjtkeywtuiwerhgjdkfrotuirop",
+									"type": "text"
+								},
+								{
+									"key": "device_type",
+									"value": "android",
+									"description": "ios/android",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://192.168.29.40:7000/RxRooster/users/login"
+					},
+					"response": [
+						{
+							"name": "LoginUser",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "mobile_number",
+											"value": "7778749562",
+											"type": "text"
+										},
+										{
+											"key": "is_verify",
+											"value": "true",
+											"type": "text"
+										},
+										{
+											"key": "country_code",
+											"value": "+91",
+											"type": "text"
+										},
+										{
+											"key": "device_token",
+											"value": "agfgbvjgkjhkafhhhhhjtkeywtuiwerhgjdkfrotuirop",
+											"type": "text"
+										},
+										{
+											"key": "device_type",
+											"value": "android",
+											"description": "ios/android",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://192.168.29.40:7000/RxRooster/users/login"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "522"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"20a-AIPG4m6Pg2iVQ+KdnqVqhAz6Up0\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Oct 2022 10:42:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"statuscode\": 1,\n    \"message\": \"User SignUp successfully\",\n    \"data\": {\n        \"_id\": \"633abcaa0ec66daf076bd73f\",\n        \"mobile_number\": \"7778749562\",\n        \"country_code\": \"+91\",\n        \"is_deleted\": false,\n        \"is_verify\": true,\n        \"created_At\": \"2022-10-03T10:42:50.270Z\",\n        \"updated_At\": \"2022-10-03T10:42:50.270Z\",\n        \"device_token\": \"agfgbvjgkjhkafhhhhhjtkeywtuiwerhgjdkfrotuirop\",\n        \"device_type\": \"android\",\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzM2FiY2FhMGVjNjZkYWYwNzZiZDczZiIsImlhdCI6MTY2NDc5Mzc3MH0.cEj3eljN6EQ1H6PFbIaASAZh4mq6xV1qg97zMGrp3Ec\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzM2FiY2FhMGVjNjZkYWYwNzZiZDczZiIsImlhdCI6MTY2NDc5NTYxN30.GjVPTGd8DVakMWTCzxk4uHoIhiyfi70uK0H8cl56940"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_name",
+									"value": "jhon",
+									"type": "text"
+								},
+								{
+									"key": "user_profession",
+									"value": "633694de4bb367ccc7725d9f",
+									"type": "text"
+								},
+								{
+									"key": "Profile_image",
+									"type": "file",
+									"src": "/C:/Users/Admin/Downloads/rose.jpg"
+								},
+								{
+									"key": "",
+									"type": "file",
+									"src": [],
+									"disabled": true
+								}
+							]
+						},
+						"url": "http://192.168.29.40:7000/RxRooster/users/update_user"
+					},
+					"response": [
+						{
+							"name": "Update User",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "user_name",
+											"value": "jhon",
+											"type": "text"
+										},
+										{
+											"key": "user_profession",
+											"value": "633694de4bb367ccc7725d9f",
+											"type": "text"
+										},
+										{
+											"key": "Profile_image",
+											"type": "file",
+											"src": "/C:/Users/Admin/Downloads/rose.jpg"
+										},
+										{
+											"key": "",
+											"type": "file",
+											"src": [],
+											"disabled": true
+										}
+									]
+								},
+								"url": "http://192.168.29.40:7000/RxRooster/users/update_user"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "452"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1c4-xhB6SZ2T5JLBAdOXd598aR5qnZA\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Oct 2022 11:14:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"statuscode\": 1,\n    \"message\": \"User details updated successfully\",\n    \"data\": {\n        \"_id\": \"633abcaa0ec66daf076bd73f\",\n        \"mobile_number\": \"7778749562\",\n        \"country_code\": \"+91\",\n        \"is_deleted\": false,\n        \"is_verify\": true,\n        \"created_At\": \"2022-10-03T10:42:50.270Z\",\n        \"updated_At\": \"2022-10-03T11:14:30.092Z\",\n        \"__v\": 0,\n        \"profile_picture\": \"/uploads/user_profile/1664795670087.jpg\",\n        \"user_name\": \"jhon\",\n        \"user_profession\": {\n            \"_id\": \"633694de4bb367ccc7725d9f\",\n            \"profession_name\": \"Doctor\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "GetUserDetail",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzM2FiY2FhMGVjNjZkYWYwNzZiZDczZiIsImlhdCI6MTY2NDc5NTYxN30.GjVPTGd8DVakMWTCzxk4uHoIhiyfi70uK0H8cl56940"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": "http://192.168.29.40:7000/RxRooster/users/getUserDetail"
+					},
+					"response": [
+						{
+							"name": "GetUserDetail",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": "http://192.168.29.40:7000/RxRooster/users/getUserDetail"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "440"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1b8-iz/EqNv2nFLEdTv6/UyNntLw7ks\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Oct 2022 11:15:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"statuscode\": 1,\n    \"message\": \"User details get successfully\",\n    \"data\": {\n        \"_id\": \"633abcaa0ec66daf076bd73f\",\n        \"mobile_number\": \"7778749562\",\n        \"country_code\": \"+91\",\n        \"is_deleted\": false,\n        \"is_verify\": true,\n        \"created_At\": \"2022-10-03T10:42:50.270Z\",\n        \"updated_At\": \"2022-10-03T11:14:30.092Z\",\n        \"profile_picture\": \"/uploads/user_profile/1664795670087.jpg\",\n        \"user_name\": \"jhon\",\n        \"user_profession\": {\n            \"_id\": \"633694de4bb367ccc7725d9f\",\n            \"profession_name\": \"Doctor\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "ProfessionList",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "http://192.168.29.40:7000/RxRooster/users/ProfessionList"
+					},
+					"response": [
+						{
+							"name": "ProfessionList",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": "http://192.168.29.40:7000/RxRooster/users/ProfessionList"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "398"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"18e-IUQi/F5iWNJg3TcMKI3hJHLRXq4\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Oct 2022 11:13:04 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"statuscode\": 1,\n    \"message\": \"profession list get successfully\",\n    \"data\": [\n        {\n            \"_id\": \"633694de4bb367ccc7725d9f\",\n            \"profession_name\": \"Doctor\"\n        },\n        {\n            \"_id\": \"633694eb4bb367ccc7725db2\",\n            \"profession_name\": \"Nurse\"\n        },\n        {\n            \"_id\": \"633695144bb367ccc7725dba\",\n            \"profession_name\": \"Developer\"\n        },\n        {\n            \"_id\": \"6336951f4bb367ccc7725dbc\",\n            \"profession_name\": \"Teacher\"\n        },\n        {\n            \"_id\": \"6336952d4bb367ccc7725dc0\",\n            \"profession_name\": \"Police\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Notification List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzM2U2OGQ0YWM3ZWQwNjhlZWVjOTExOCIsImlhdCI6MTY2NTU1OTQ3M30.hwmNoVeLOwd9bq2EP5NycaThVNlllubIyuANLoVyUhg"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": "http://192.168.29.40:7000/RxRooster/users/notificationList"
+					},
+					"response": [
+						{
+							"name": "Notification List",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": "http://192.168.29.40:7000/RxRooster/users/notificationList"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "3495"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"da7-L5g5a0YTaQF+3/uxH//rXy/xKcA\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 13 Oct 2022 08:50:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"statuscode\": 1,\n    \"message\": \"Notification list get successfully\",\n    \"data\": [\n        {\n            \"_id\": \"6346956b3515ed9e074cd0c9\",\n            \"title\": \"RxRooster\",\n            \"description\": \"Hello\",\n            \"user_id\": \"63468f98bea420d934386abe\",\n            \"is_deleted\": false,\n            \"created_At\": \"2022-10-12T10:22:35.088Z\",\n            \"updated_At\": \"2022-10-12T10:22:35.088Z\"\n        },\n        {\n            \"_id\": \"6346956c3515ed9e074cd0d2\",\n            \"title\": \"RxRooster\",\n            \"description\": \"Hello\",\n            \"user_id\": \"63468f98bea420d934386abe\",\n            \"is_deleted\": false,\n            \"created_At\": \"2022-10-12T10:22:36.092Z\",\n            \"updated_At\": \"2022-10-12T10:22:36.092Z\"\n        },\n        {\n            \"_id\": \"6346956d3515ed9e074cd0e1\",\n            \"title\": \"RxRooster\",\n            \"description\": \"Hello\",\n            \"user_id\": \"63468f98bea420d934386abe\",\n            \"is_deleted\": false,\n            \"created_At\": \"2022-10-12T10:22:37.094Z\",\n            \"updated_At\": \"2022-10-12T10:22:37.094Z\"\n        },\n        {\n            \"_id\": \"6346956e3515ed9e074cd0ed\",\n            \"title\": \"RxRooster\",\n            \"description\": \"Hello\",\n            \"user_id\": \"63468f98bea420d934386abe\",\n            \"is_deleted\": false,\n            \"created_At\": \"2022-10-12T10:22:38.106Z\",\n            \"updated_At\": \"2022-10-12T10:22:38.106Z\"\n        },\n        {\n            \"_id\": \"634695c11c752ad0f166c7ce\",\n            \"title\": \"RxRooster\",\n            \"description\": \"Hello\",\n            \"user_id\": \"63468f98bea420d934386abe\",\n            \"is_deleted\": false,\n            \"created_At\": \"2022-10-12T10:24:00.718Z\",\n            \"updated_At\": \"2022-10-12T10:24:00.718Z\"\n        },\n        {\n            \"_id\": \"634695c11c752ad0f166c7d7\",\n            \"title\": \"RxRooster\",\n            \"description\": \"Hello\",\n            \"user_id\": \"63468f98bea420d934386abe\",\n            \"is_deleted\": false,\n            \"created_At\": \"2022-10-12T10:24:01.723Z\",\n            \"updated_At\": \"2022-10-12T10:24:01.723Z\"\n        },\n        {\n            \"_id\": \"634695c31c752ad0f166c7e4\",\n            \"title\": \"RxRooster\",\n            \"description\": \"Hello\",\n            \"user_id\": \"63468f98bea420d934386abe\",\n            \"is_deleted\": false,\n            \"created_At\": \"2022-10-12T10:24:02.732Z\",\n            \"updated_At\": \"2022-10-12T10:24:02.732Z\"\n        },\n        {\n            \"_id\": \"634695c31c752ad0f166c7f1\",\n            \"title\": \"RxRooster\",\n            \"description\": \"Hello\",\n            \"user_id\": \"63468f98bea420d934386abe\",\n            \"is_deleted\": false,\n            \"created_At\": \"2022-10-12T10:24:03.741Z\",\n            \"updated_At\": \"2022-10-12T10:24:03.741Z\"\n        },\n        {\n            \"_id\": \"634695c51c752ad0f166c800\",\n            \"title\": \"RxRooster\",\n            \"description\": \"Hello\",\n            \"user_id\": \"63468f98bea420d934386abe\",\n            \"is_deleted\": false,\n            \"created_At\": \"2022-10-12T10:24:04.752Z\",\n            \"updated_At\": \"2022-10-12T10:24:04.752Z\"\n        },\n        {\n            \"_id\": \"6346a1d0eeba06bde2234a28\",\n            \"title\": \"RxRooster\",\n            \"description\": \"Hello\",\n            \"user_id\": \"63468f98bea420d934386abe\",\n            \"is_deleted\": false,\n            \"created_At\": \"2022-10-12T11:15:28.161Z\",\n            \"updated_At\": \"2022-10-12T11:15:28.161Z\"\n        },\n        {\n            \"_id\": \"6346a1d1eeba06bde2234a2e\",\n            \"title\": \"RxRooster\",\n            \"description\": \"Hello\",\n            \"user_id\": \"63468f98bea420d934386abe\",\n            \"is_deleted\": false,\n            \"created_At\": \"2022-10-12T11:15:29.172Z\",\n            \"updated_At\": \"2022-10-12T11:15:29.172Z\"\n        },\n        {\n            \"_id\": \"6346a1d2eeba06bde2234a34\",\n            \"title\": \"RxRooster\",\n            \"description\": \"Hello\",\n            \"user_id\": \"63468f98bea420d934386abe\",\n            \"is_deleted\": false,\n            \"created_At\": \"2022-10-12T11:15:30.184Z\",\n            \"updated_At\": \"2022-10-12T11:15:30.184Z\"\n        },\n        {\n            \"_id\": \"6346a1d3eeba06bde2234a3a\",\n            \"title\": \"RxRooster\",\n            \"description\": \"Hello\",\n            \"user_id\": \"63468f98bea420d934386abe\",\n            \"is_deleted\": false,\n            \"created_At\": \"2022-10-12T11:15:31.199Z\",\n            \"updated_At\": \"2022-10-12T11:15:31.199Z\"\n        },\n        {\n            \"_id\": \"6346a1d4eeba06bde2234a40\",\n            \"title\": \"RxRooster\",\n            \"description\": \"Hello\",\n            \"user_id\": \"63468f98bea420d934386abe\",\n            \"is_deleted\": false,\n            \"created_At\": \"2022-10-12T11:15:32.212Z\",\n            \"updated_At\": \"2022-10-12T11:15:32.212Z\"\n        },\n        {\n            \"_id\": \"6346a1d5eeba06bde2234a46\",\n            \"title\": \"RxRooster\",\n            \"description\": \"Hello\",\n            \"user_id\": \"63468f98bea420d934386abe\",\n            \"is_deleted\": false,\n            \"created_At\": \"2022-10-12T11:15:33.214Z\",\n            \"updated_At\": \"2022-10-12T11:15:33.214Z\"\n        },\n        {\n            \"_id\": \"6346a1d6eeba06bde2234a4c\",\n            \"title\": \"RxRooster\",\n            \"description\": \"Hello\",\n            \"user_id\": \"63468f98bea420d934386abe\",\n            \"is_deleted\": false,\n            \"created_At\": \"2022-10-12T11:15:34.226Z\",\n            \"updated_At\": \"2022-10-12T11:15:34.226Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "notificationCount",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzM2U2OGQ0YWM3ZWQwNjhlZWVjOTExOCIsImlhdCI6MTY2NTU1OTQ3M30.hwmNoVeLOwd9bq2EP5NycaThVNlllubIyuANLoVyUhg"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": "http://192.168.29.40:7000/RxRooster/users/notificationCount"
+					},
+					"response": [
+						{
+							"name": "notificationCount",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "http://192.168.29.40:7000/RxRooster/users/notificationCount"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "143"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"8f-EveJkP/gPjFXTAYDWovRJeO2HHA\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 12 Oct 2022 09:10:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"statuscode\": 1,\n    \"message\": \"Notification list get successfully\",\n    \"data\": {\n        \"_id\": \"633e68d4ac7ed068eeec9118\",\n        \"notification_badge\": 0\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "DOCUMENT",
+			"item": [
+				{
+					"name": "AddDocumentDetails",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzM2FiY2FhMGVjNjZkYWYwNzZiZDczZiIsImlhdCI6MTY2NDc5NTYxN30.GjVPTGd8DVakMWTCzxk4uHoIhiyfi70uK0H8cl56940"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "document_description",
+									"value": "Demo is short for demonstrate or demonstration. It can be a verb, as when a tech company demos its new tablet or laptop.",
+									"type": "text"
+								},
+								{
+									"key": "expire_date",
+									"value": "2022-09-26T06:33:46.075Z",
+									"type": "text"
+								},
+								{
+									"key": "reminder_date",
+									"value": "2022-09-26T06:33:46.075Z",
+									"type": "text"
+								},
+								{
+									"key": "reminder_time",
+									"value": "10:05AM",
+									"type": "text"
+								},
+								{
+									"key": "reminder_repeat",
+									"value": "Daily",
+									"description": "Does not repeat,  Daily, Weekly",
+									"type": "text"
+								},
+								{
+									"key": "file_type",
+									"value": "video",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/Admin/Downloads/jethalal-sab-changa-c.gif"
+								},
+								{
+									"key": "document_type",
+									"value": "633694fd4bb367ccc7725db8",
+									"description": " - id",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://192.168.29.40:7000/RxRooster/document/userDocumentAdd"
+					},
+					"response": [
+						{
+							"name": "AddDocumentDetails",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "document_description",
+											"value": "Demo is short for demonstrate or demonstration. It can be a verb, as when a tech company demos its new tablet or laptop.",
+											"type": "text"
+										},
+										{
+											"key": "expire_date",
+											"value": "2022-09-26T06:33:46.075Z",
+											"type": "text"
+										},
+										{
+											"key": "reminder_date",
+											"value": "2022-09-26T06:33:46.075Z",
+											"type": "text"
+										},
+										{
+											"key": "reminder_time",
+											"value": "10:05AM",
+											"type": "text"
+										},
+										{
+											"key": "reminder_repeat",
+											"value": "Daily",
+											"description": "Does not repeat,  Daily, Weekly",
+											"type": "text"
+										},
+										{
+											"key": "file_type",
+											"value": "video",
+											"type": "text"
+										},
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/C:/Users/Admin/Downloads/jethalal-sab-changa-c.gif"
+										},
+										{
+											"key": "document_type",
+											"value": "633694fd4bb367ccc7725db8",
+											"description": " - id",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://192.168.29.40:7000/RxRooster/document/userDocumentAdd"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "729"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2d9-qmMaFq5Sc/A6hMJAnqftS+R+/kc\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Oct 2022 11:21:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"statuscode\": 1,\n    \"message\": \"Document added successfully\",\n    \"data\": {\n        \"_id\": \"633ac5c9ab706b06d582ab6d\",\n        \"user_id\": {\n            \"_id\": \"633abcaa0ec66daf076bd73f\",\n            \"user_name\": \"jhon\"\n        },\n        \"document_type\": {\n            \"_id\": \"633694fd4bb367ccc7725db8\",\n            \"Document_name\": \"Aadhar_card\"\n        },\n        \"document_description\": \"Demo is short for demonstrate or demonstration. It can be a verb, as when a tech company demos its new tablet or laptop.\",\n        \"expire_date\": \"2022-09-26T06:33:46.075Z\",\n        \"reminder_date\": \"2022-09-26T06:33:46.075Z\",\n        \"reminder_time\": \"10:05AM\",\n        \"reminder_repeat\": \"Daily\",\n        \"is_deleted\": false,\n        \"created_At\": \"2022-10-03T11:21:45.733Z\",\n        \"updated_At\": \"2022-10-03T11:21:45.733Z\",\n        \"file\": [\n            \"/uploads/user_document/1664796105717.gif\"\n        ],\n        \"file_type\": \"video\",\n        \"file_length\": \"1\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "DocumentTypeList",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": "http://192.168.29.40:7000/RxRooster/document/userDocumentType"
+					},
+					"response": [
+						{
+							"name": "DocumentTypeList",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": "http://192.168.29.40:7000/RxRooster/document/userDocumentType"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "211"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"d3-nahY0tk0N9yaYx43aRiPXUa8L8M\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Oct 2022 11:18:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"statuscode\": 1,\n    \"message\": \"Document types get successfully\",\n    \"data\": [\n        {\n            \"_id\": \"633694ef4bb367ccc7725db4\",\n            \"Document_name\": \"PAN Card\"\n        },\n        {\n            \"_id\": \"633694fd4bb367ccc7725db8\",\n            \"Document_name\": \"Aadhar_card\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "userDocumentList",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNDY4Zjk4YmVhNDIwZDkzNDM4NmFiZSIsImlhdCI6MTY2NTU2OTM0NX0.Pw4tw8WAZhzd8_XahYLtF6W1BDMlYnbRn-p7QC-PKz0"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": "http://192.168.29.40:7000/RxRooster/document/userDocumentList"
+					},
+					"response": [
+						{
+							"name": "userDocumentList",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": "http://192.168.29.40:7000/RxRooster/document/userDocumentList"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "6582"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"19b6-6duAySGVpqA6YnRSNmGYyxtqJxE\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 13 Oct 2022 05:19:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"statuscode\": 1,\n    \"message\": \"Document list get successfully\",\n    \"data\": [\n        {\n            \"_id\": \"63468feebea420d934387235\",\n            \"user_id\": {\n                \"_id\": \"63468f98bea420d934386abe\",\n                \"user_name\": \"hfcy\"\n            },\n            \"document_type\": {\n                \"_id\": \"6343b57a985e162846934ad1\",\n                \"Document_name\": \"Bank_Document\"\n            },\n            \"document_description\": \"hello123\",\n            \"expire_date\": \"2022-10-12T18:30:00.000Z\",\n            \"reminder_date\": \"2022-10-11T18:30:00.000Z\",\n            \"reminder_time\": \"2022-10-12T10:15:00.000Z\",\n            \"reminder_repeat\": \"Does not repeat\",\n            \"is_deleted\": false,\n            \"created_At\": \"2022-10-12T09:59:10.970Z\",\n            \"updated_At\": \"2022-10-12T14:10:04.372Z\",\n            \"file\": [\n                {\n                    \"_id\": \"63468feebea420d934387238\",\n                    \"document_detail_id\": \"63468feebea420d934387235\",\n                    \"user_id\": \"63468f98bea420d934386abe\",\n                    \"file\": \"/uploads/user_document/1665568749672.jpg\",\n                    \"file_type\": \"doc\",\n                    \"file_size\": \"194286\",\n                    \"is_deleted\": false,\n                    \"created_At\": \"2022-10-12T09:59:10.970Z\",\n                    \"updated_At\": \"2022-10-12T09:59:10.970Z\"\n                },\n                {\n                    \"_id\": \"63468fefbea420d93438723b\",\n                    \"document_detail_id\": \"63468feebea420d934387235\",\n                    \"user_id\": \"63468f98bea420d934386abe\",\n                    \"file\": \"/uploads/user_document/1665568749939.jpg\",\n                    \"file_type\": \"doc\",\n                    \"file_size\": \"1775691\",\n                    \"is_deleted\": false,\n                    \"created_At\": \"2022-10-12T09:59:10.970Z\",\n                    \"updated_At\": \"2022-10-12T09:59:10.970Z\"\n                },\n                {\n                    \"_id\": \"634690a1bea420d93438857f\",\n                    \"document_detail_id\": \"63468feebea420d934387235\",\n                    \"file\": \"/uploads/user_document/1665568929656.pdf\",\n                    \"file_type\": \"doc\",\n                    \"file_size\": \"3028\",\n                    \"is_deleted\": false,\n                    \"created_At\": \"2022-10-12T10:02:09.660Z\",\n                    \"updated_At\": \"2022-10-12T10:02:09.660Z\"\n                },\n                {\n                    \"_id\": \"634691d4d2b5da536913bdf4\",\n                    \"document_detail_id\": \"63468feebea420d934387235\",\n                    \"file\": \"/uploads/user_document/1665569236449.xlsx\",\n                    \"file_type\": \"doc\",\n                    \"file_size\": \"121186\",\n                    \"is_deleted\": false,\n                    \"created_At\": \"2022-10-12T10:07:16.679Z\",\n                    \"updated_At\": \"2022-10-12T10:07:16.679Z\"\n                },\n                {\n                    \"_id\": \"63469383271fbe49bc6918d5\",\n                    \"document_detail_id\": \"63468feebea420d934387235\",\n                    \"file\": \"/uploads/user_document/1665569667205.jpg\",\n                    \"file_type\": \"doc\",\n                    \"file_size\": \"2309746\",\n                    \"is_deleted\": false,\n                    \"created_At\": \"2022-10-12T10:14:27.942Z\",\n                    \"updated_At\": \"2022-10-12T10:14:27.942Z\"\n                },\n                {\n                    \"_id\": \"6346c1de55add07e3bd490fb\",\n                    \"document_detail_id\": \"63468feebea420d934387235\",\n                    \"file\": \"/uploads/user_document/1665581534411.jpg\",\n                    \"file_type\": \"image\",\n                    \"file_size\": \"7699\",\n                    \"is_deleted\": false,\n                    \"created_At\": \"2022-10-12T13:32:14.422Z\",\n                    \"updated_At\": \"2022-10-12T13:32:14.422Z\"\n                },\n                {\n                    \"_id\": \"6346c1de55add07e3bd490fe\",\n                    \"document_detail_id\": \"63468feebea420d934387235\",\n                    \"file\": \"/uploads/user_document/1665581534412.jpg\",\n                    \"file_type\": \"image\",\n                    \"file_size\": \"7621\",\n                    \"is_deleted\": false,\n                    \"created_At\": \"2022-10-12T13:32:14.422Z\",\n                    \"updated_At\": \"2022-10-12T13:32:14.422Z\"\n                },\n                {\n                    \"_id\": \"6346caa9e0dce59f3104c048\",\n                    \"document_detail_id\": \"63468feebea420d934387235\",\n                    \"file\": \"/uploads/user_document/1665583785966.jpg\",\n                    \"file_type\": \"image\",\n                    \"file_size\": \"5586\",\n                    \"is_deleted\": false,\n                    \"created_At\": \"2022-10-12T14:09:45.976Z\",\n                    \"updated_At\": \"2022-10-12T14:09:45.976Z\"\n                }\n            ],\n            \"file_length\": 8\n        },\n        {\n            \"_id\": \"63469259d2b5da536913cabb\",\n            \"user_id\": {\n                \"_id\": \"63468f98bea420d934386abe\",\n                \"user_name\": \"hfcy\"\n            },\n            \"document_type\": {\n                \"_id\": \"6343b5d2985e162846934ade\",\n                \"Document_name\": \"Driving Licence\"\n            },\n            \"document_description\": \"uyeufgfvhdv\",\n            \"expire_date\": \"2022-09-26T06:33:46.075Z\",\n            \"reminder_date\": \"2022-09-26T06:33:46.075Z\",\n            \"reminder_repeat\": \"Daily\",\n            \"is_deleted\": false,\n            \"created_At\": \"2022-10-12T10:09:29.568Z\",\n            \"updated_At\": \"2022-10-12T10:12:25.055Z\",\n            \"file\": [\n                {\n                    \"_id\": \"63469259d2b5da536913cabd\",\n                    \"document_detail_id\": \"63469259d2b5da536913cabb\",\n                    \"user_id\": \"63468f98bea420d934386abe\",\n                    \"file\": \"/uploads/user_document/1665569369561.png\",\n                    \"file_type\": \"Image\",\n                    \"file_size\": \"8195\",\n                    \"is_deleted\": false,\n                    \"created_At\": \"2022-10-12T10:09:29.568Z\",\n                    \"updated_At\": \"2022-10-12T10:09:29.568Z\"\n                },\n                {\n                    \"_id\": \"634692bad2b5da536913d5a7\",\n                    \"document_detail_id\": \"63469259d2b5da536913cabb\",\n                    \"file\": \"/uploads/user_document/1665569466272.jpg\",\n                    \"file_type\": \"gif\",\n                    \"file_size\": \"5142\",\n                    \"is_deleted\": false,\n                    \"created_At\": \"2022-10-12T10:11:06.274Z\",\n                    \"updated_At\": \"2022-10-12T10:11:06.274Z\"\n                },\n                {\n                    \"_id\": \"634692f2daad0c49c619f61d\",\n                    \"document_detail_id\": \"63469259d2b5da536913cabb\",\n                    \"file\": \"/uploads/user_document/1665569522500.jpg\",\n                    \"file_type\": \"gif\",\n                    \"file_size\": \"5142\",\n                    \"is_deleted\": false,\n                    \"created_At\": \"2022-10-12T10:12:02.538Z\",\n                    \"updated_At\": \"2022-10-12T10:12:02.538Z\"\n                }\n            ],\n            \"file_length\": 3\n        },\n        {\n            \"_id\": \"634693e4271fbe49bc69229a\",\n            \"user_id\": {\n                \"_id\": \"63468f98bea420d934386abe\",\n                \"user_name\": \"hfcy\"\n            },\n            \"document_type\": {\n                \"_id\": \"6343b57a985e162846934ad1\",\n                \"Document_name\": \"Bank_Document\"\n            },\n            \"document_description\": \"hshwhdjjd\",\n            \"expire_date\": \"2022-10-11T18:30:00.000Z\",\n            \"reminder_date\": \"2022-10-11T18:30:00.000Z\",\n            \"reminder_time\": \"2022-10-12T10:17:00.000Z\",\n            \"reminder_repeat\": \"Does not repeat\",\n            \"is_deleted\": false,\n            \"created_At\": \"2022-10-12T10:16:04.409Z\",\n            \"updated_At\": \"2022-10-12T10:16:04.409Z\",\n            \"file\": [\n                {\n                    \"_id\": \"634693e4271fbe49bc69229c\",\n                    \"document_detail_id\": \"634693e4271fbe49bc69229a\",\n                    \"user_id\": \"63468f98bea420d934386abe\",\n                    \"file\": \"/uploads/user_document/1665569764327.jpg\",\n                    \"file_type\": \"doc\",\n                    \"file_size\": \"179259\",\n                    \"is_deleted\": false,\n                    \"created_At\": \"2022-10-12T10:16:04.409Z\",\n                    \"updated_At\": \"2022-10-12T10:16:04.409Z\"\n                }\n            ],\n            \"file_length\": 1\n        },\n        {\n            \"_id\": \"6346a288b71145088c6b3bfd\",\n            \"user_id\": {\n                \"_id\": \"63468f98bea420d934386abe\",\n                \"user_name\": \"hfcy\"\n            },\n            \"document_type\": {\n                \"_id\": \"6343b57a985e162846934ad1\",\n                \"Document_name\": \"Bank_Document\"\n            },\n            \"document_description\": \"tuj pe bhej dena chahiye ueh\",\n            \"expire_date\": \"2022-10-22T18:30:00.000Z\",\n            \"reminder_date\": \"2022-10-11T18:30:00.000Z\",\n            \"reminder_time\": \"2022-10-12T11:20:00.000Z\",\n            \"reminder_repeat\": \"Does not repeat\",\n            \"is_deleted\": false,\n            \"created_At\": \"2022-10-12T11:18:32.862Z\",\n            \"updated_At\": \"2022-10-12T11:18:32.862Z\",\n            \"file\": [\n                {\n                    \"_id\": \"6346a288b71145088c6b3bff\",\n                    \"document_detail_id\": \"6346a288b71145088c6b3bfd\",\n                    \"user_id\": \"63468f98bea420d934386abe\",\n                    \"file\": \"/uploads/user_document/1665573512838.jpg\",\n                    \"file_type\": \"doc\",\n                    \"file_size\": \"43200\",\n                    \"is_deleted\": false,\n                    \"created_At\": \"2022-10-12T11:18:32.862Z\",\n                    \"updated_At\": \"2022-10-12T11:18:32.862Z\"\n                }\n            ],\n            \"file_length\": 1\n        },\n        {\n            \"_id\": \"6346a3a4f83b1b08426eaf75\",\n            \"user_id\": {\n                \"_id\": \"63468f98bea420d934386abe\",\n                \"user_name\": \"hfcy\"\n            },\n            \"document_type\": {\n                \"_id\": \"6343b57a985e162846934ad1\",\n                \"Document_name\": \"Bank_Document\"\n            },\n            \"document_description\": \"hwuwshhs\",\n            \"expire_date\": \"2022-10-11T18:30:00.000Z\",\n            \"reminder_date\": \"2022-10-11T18:30:00.000Z\",\n            \"reminder_time\": \"2022-10-12T11:24:00.000Z\",\n            \"reminder_repeat\": \"Does not repeat\",\n            \"is_deleted\": false,\n            \"created_At\": \"2022-10-12T11:23:16.225Z\",\n            \"updated_At\": \"2022-10-12T11:23:16.225Z\",\n            \"file\": [\n                {\n                    \"_id\": \"6346a3a4f83b1b08426eaf78\",\n                    \"document_detail_id\": \"6346a3a4f83b1b08426eaf75\",\n                    \"user_id\": \"63468f98bea420d934386abe\",\n                    \"file\": \"/uploads/user_document/1665573796209.jpg\",\n                    \"file_type\": \"doc\",\n                    \"file_size\": \"55860\",\n                    \"is_deleted\": false,\n                    \"created_At\": \"2022-10-12T11:23:16.225Z\",\n                    \"updated_At\": \"2022-10-12T11:23:16.225Z\"\n                }\n            ],\n            \"file_length\": 1\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "PerticularDocumentDetails",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzM2FiY2FhMGVjNjZkYWYwNzZiZDczZiIsImlhdCI6MTY2NDc5NTYxN30.GjVPTGd8DVakMWTCzxk4uHoIhiyfi70uK0H8cl56940"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "doc_id",
+									"value": "633ac563d4bba8d085702e13",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://192.168.29.40:7000/RxRooster/document/documentDetails"
+					},
+					"response": [
+						{
+							"name": "PerticularDocumentDetails",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "doc_id",
+											"value": "633ac563d4bba8d085702e13",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://192.168.29.40:7000/RxRooster/document/documentDetails"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "831"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"33f-hJJsdfPzQkXwmReoQn8XqfUxiaI\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Oct 2022 11:25:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"statuscode\": 1,\n    \"message\": \"Document details get successfully\",\n    \"data\": {\n        \"_id\": \"633ac563d4bba8d085702e15\",\n        \"document_detail_id\": {\n            \"_id\": \"633ac563d4bba8d085702e13\",\n            \"user_id\": \"633abcaa0ec66daf076bd73f\",\n            \"document_type\": \"633694fd4bb367ccc7725db8\",\n            \"document_description\": \"Demo is short for demonstrate or demonstration. It can be a verb, as when a tech company demos its new tablet or laptop.\",\n            \"expire_date\": \"2022-09-26T06:33:46.075Z\",\n            \"reminder_date\": \"2022-09-26T06:33:46.075Z\",\n            \"reminder_time\": \"10:05AM\",\n            \"reminder_repeat\": \"Daily\",\n            \"is_deleted\": false,\n            \"created_At\": \"2022-10-03T11:20:03.932Z\",\n            \"updated_At\": \"2022-10-03T11:20:03.932Z\",\n            \"__v\": 0\n        },\n        \"user_id\": \"633abcaa0ec66daf076bd73f\",\n        \"file\": [],\n        \"file_type\": \"textfile\",\n        \"file_length\": \"0\",\n        \"is_deleted\": false,\n        \"created_At\": \"2022-10-03T11:20:03.932Z\",\n        \"updated_At\": \"2022-10-03T11:20:03.932Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "updateUserDocument",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNDY4Zjk4YmVhNDIwZDkzNDM4NmFiZSIsImlhdCI6MTY2NTU2OTM0NX0.Pw4tw8WAZhzd8_XahYLtF6W1BDMlYnbRn-p7QC-PKz0"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "document_id",
+									"value": "63468feebea420d934387235",
+									"type": "text"
+								},
+								{
+									"key": "document_description",
+									"value": "hello",
+									"type": "text"
+								},
+								{
+									"key": "deleted_file",
+									"value": "63468feebea420d934387238",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "file_type",
+									"value": "image",
+									"type": "text"
+								},
+								{
+									"key": "deleted_file",
+									"value": "63468fefbea420d93438723b",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/Admin/Downloads/2document.jpg"
+								}
+							]
+						},
+						"url": "http://192.168.29.40:7000/RxRooster/document/updateUserDocument"
+					},
+					"response": [
+						{
+							"name": "updateUserDocument",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "document_id",
+											"value": "63468feebea420d934387235",
+											"type": "text"
+										},
+										{
+											"key": "document_description",
+											"value": "hello",
+											"type": "text"
+										},
+										{
+											"key": "deleted_file",
+											"value": "63468feebea420d934387238",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "file_type",
+											"value": "image",
+											"type": "text"
+										},
+										{
+											"key": "deleted_file",
+											"value": "63468fefbea420d93438723b",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/C:/Users/Admin/Downloads/2document.jpg"
+										}
+									]
+								},
+								"url": "http://192.168.29.40:7000/RxRooster/document/updateUserDocument"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "3230"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c9e-vdtbmpm/3Lt2Cv9owrmEn6NxvI8\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 13 Oct 2022 06:36:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"statuscode\": 1,\n    \"message\": \"Document added successfully\",\n    \"data\": {\n        \"_id\": \"63468feebea420d934387235\",\n        \"user_id\": \"63468f98bea420d934386abe\",\n        \"document_type\": \"6343b57a985e162846934ad1\",\n        \"document_description\": \"hello\",\n        \"expire_date\": \"2022-10-12T18:30:00.000Z\",\n        \"reminder_date\": \"2022-10-11T18:30:00.000Z\",\n        \"reminder_time\": \"2022-10-12T10:15:00.000Z\",\n        \"reminder_repeat\": \"Does not repeat\",\n        \"is_deleted\": false,\n        \"created_At\": \"2022-10-12T09:59:10.970Z\",\n        \"updated_At\": \"2022-10-13T06:36:31.578Z\",\n        \"__v\": 0,\n        \"file\": [\n            {\n                \"_id\": \"634690a1bea420d93438857f\",\n                \"document_detail_id\": \"63468feebea420d934387235\",\n                \"file\": \"/uploads/user_document/1665568929656.pdf\",\n                \"file_type\": \"doc\",\n                \"file_size\": \"3028\",\n                \"is_deleted\": false,\n                \"created_At\": \"2022-10-12T10:02:09.660Z\",\n                \"updated_At\": \"2022-10-12T10:02:09.660Z\"\n            },\n            {\n                \"_id\": \"634691d4d2b5da536913bdf4\",\n                \"document_detail_id\": \"63468feebea420d934387235\",\n                \"file\": \"/uploads/user_document/1665569236449.xlsx\",\n                \"file_type\": \"doc\",\n                \"file_size\": \"121186\",\n                \"is_deleted\": false,\n                \"created_At\": \"2022-10-12T10:07:16.679Z\",\n                \"updated_At\": \"2022-10-12T10:07:16.679Z\"\n            },\n            {\n                \"_id\": \"63469383271fbe49bc6918d5\",\n                \"document_detail_id\": \"63468feebea420d934387235\",\n                \"file\": \"/uploads/user_document/1665569667205.jpg\",\n                \"file_type\": \"doc\",\n                \"file_size\": \"2309746\",\n                \"is_deleted\": false,\n                \"created_At\": \"2022-10-12T10:14:27.942Z\",\n                \"updated_At\": \"2022-10-12T10:14:27.942Z\"\n            },\n            {\n                \"_id\": \"6346c1de55add07e3bd490fb\",\n                \"document_detail_id\": \"63468feebea420d934387235\",\n                \"file\": \"/uploads/user_document/1665581534411.jpg\",\n                \"file_type\": \"image\",\n                \"file_size\": \"7699\",\n                \"is_deleted\": false,\n                \"created_At\": \"2022-10-12T13:32:14.422Z\",\n                \"updated_At\": \"2022-10-12T13:32:14.422Z\"\n            },\n            {\n                \"_id\": \"6346c1de55add07e3bd490fe\",\n                \"document_detail_id\": \"63468feebea420d934387235\",\n                \"file\": \"/uploads/user_document/1665581534412.jpg\",\n                \"file_type\": \"image\",\n                \"file_size\": \"7621\",\n                \"is_deleted\": false,\n                \"created_At\": \"2022-10-12T13:32:14.422Z\",\n                \"updated_At\": \"2022-10-12T13:32:14.422Z\"\n            },\n            {\n                \"_id\": \"6346caa9e0dce59f3104c048\",\n                \"document_detail_id\": \"63468feebea420d934387235\",\n                \"file\": \"/uploads/user_document/1665583785966.jpg\",\n                \"file_type\": \"image\",\n                \"file_size\": \"5586\",\n                \"is_deleted\": false,\n                \"created_At\": \"2022-10-12T14:09:45.976Z\",\n                \"updated_At\": \"2022-10-12T14:09:45.976Z\"\n            },\n            {\n                \"_id\": \"6347a4241eb9a8e93030be2e\",\n                \"document_detail_id\": \"63468feebea420d934387235\",\n                \"file\": \"/uploads/user_document/1665639460495.jpg\",\n                \"file_type\": \"image\",\n                \"file_size\": \"7621\",\n                \"is_deleted\": false,\n                \"created_At\": \"2022-10-13T05:37:40.504Z\",\n                \"updated_At\": \"2022-10-13T05:37:40.504Z\"\n            },\n            {\n                \"_id\": \"6347a4c1d15ac826fbd676f0\",\n                \"document_detail_id\": \"63468feebea420d934387235\",\n                \"file\": \"/uploads/user_document/1665639617397.jpg\",\n                \"file_type\": \"image\",\n                \"file_size\": \"5142\",\n                \"is_deleted\": false,\n                \"created_At\": \"2022-10-13T05:40:17.402Z\",\n                \"updated_At\": \"2022-10-13T05:40:17.402Z\"\n            },\n            {\n                \"_id\": \"6347b1df9aa67ae6f901aa20\",\n                \"document_detail_id\": \"63468feebea420d934387235\",\n                \"file\": \"/uploads/user_document/1665642975365.jpg\",\n                \"file_type\": \"image\",\n                \"file_size\": \"5142\",\n                \"is_deleted\": false,\n                \"created_At\": \"2022-10-13T06:36:15.373Z\",\n                \"updated_At\": \"2022-10-13T06:36:15.373Z\"\n            },\n            {\n                \"_id\": \"6347b1ef9aa67ae6f901ac01\",\n                \"document_detail_id\": \"63468feebea420d934387235\",\n                \"file\": \"/uploads/user_document/1665642991577.jpg\",\n                \"file_type\": \"image\",\n                \"file_size\": \"5142\",\n                \"is_deleted\": false,\n                \"created_At\": \"2022-10-13T06:36:31.578Z\",\n                \"updated_At\": \"2022-10-13T06:36:31.578Z\"\n            }\n        ],\n        \"file_length\": 10\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "deleteDocument",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNDY4Zjk4YmVhNDIwZDkzNDM4NmFiZSIsImlhdCI6MTY2NTU2OTM0NX0.Pw4tw8WAZhzd8_XahYLtF6W1BDMlYnbRn-p7QC-PKz0"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "document_id",
+									"value": "6346b30d14e584ed91085686",
+									"description": "id",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://192.168.29.40:7000/RxRooster/document/deleteUserDocument"
+					},
+					"response": [
+						{
+							"name": "deleteDocument",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "document_id",
+											"value": "6346b30d14e584ed91085686",
+											"description": "id",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://192.168.29.40:7000/RxRooster/document/deleteUserDocument"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "80"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"50-gD0mJc83LBEVa9J1gKVOHEorW6k\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 13 Oct 2022 08:53:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"statuscode\": 1,\n    \"message\": \"Your document deleted successfully..\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "LIST",
+			"item": [
+				{
+					"name": "ProfessionAdd",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "profession_name",
+									"value": "Farmer",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://192.168.29.40:7000/RxRooster/list/addProfession"
+					},
+					"response": [
+						{
+							"name": "ProfessionAdd",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "profession_name",
+											"value": "Farmer",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://192.168.29.40:7000/RxRooster/list/addProfession"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "243"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"f3-qYoW/pHUATgALDF3ZchpLcZSZoU\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Oct 2022 11:28:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"statuscode\": 1,\n    \"message\": \"New profession add successfully\",\n    \"data\": {\n        \"profession_name\": \"Farmer\",\n        \"is_deleted\": false,\n        \"created_At\": \"2022-10-03T11:28:44.405Z\",\n        \"updated_At\": \"2022-10-03T11:28:44.405Z\",\n        \"_id\": \"633ac76c00065faa584cd9cd\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "DocumentTypeAdd",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Document_name",
+									"value": "Bank_Document",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://192.168.29.40:7000/RxRooster/list/addDocumentType"
+					},
+					"response": [
+						{
+							"name": "DocumentTypeAdd",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "Document_name",
+											"value": "Bank_Document",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://192.168.29.40:7000/RxRooster/list/addDocumentType"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "253"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"fd-OpkMQIdulvpjMVINEYDQz/ykOOM\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Oct 2022 11:29:27 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"statuscode\": 1,\n    \"message\": \"New document type added successfully\",\n    \"data\": {\n        \"Document_name\": \"Bank_Document\",\n        \"is_deleted\": false,\n        \"created_At\": \"2022-10-03T11:29:27.503Z\",\n        \"updated_At\": \"2022-10-03T11:29:27.503Z\",\n        \"_id\": \"633ac79700065faa584cd9cf\"\n    }\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

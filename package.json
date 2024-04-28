@@ -1,0 +1,31 @@
+{
+  "name": "rxrooster_node",
+  "version": "1.0.0",
+  "description": "This is rxrooster application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon main.js",
+    "dev": "node main.js"
+  },
+  "keywords": [],
+  "author": "weapplinse",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "connect-multiparty": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "fcm-node": "^1.6.1",
+    "joi": "^17.6.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.4",
+    "mongoose": "^6.6.1",
+    "multer": "^1.4.5-lts.1",
+    "node-cron": "^3.0.2",
+    "node-schedule": "^2.1.0",
+    "nodemon": "^2.0.20",
+    "path": "^0.12.7"
+  }
+}
